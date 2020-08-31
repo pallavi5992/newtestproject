@@ -1,1 +1,68 @@
 Welcome to Git learning
+
+Important steps
+1. git init
+ 2.git add .
+3. git commit -m "First commit"
+4. git status
+5. git remote add origin git@github.com:pallavi5992/Laravel-Practice.git
+6. ssh-keygen -t rsa -b 4096 -C "pallaviraj5992@gmail.com"
+ it will show :-
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/dell/.ssh/id_rsa):
+
+7.cat /c/Users/dell/.ssh/id_rsa.pub
+ 
+it will give:-
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDHclGZZOIPtF4Aa0SGd2Bxzt9r1VSQTozNxSQOKdgkO1LT0nvnc2yvutQ5OLESyZjZLRM2NbfCGWWvHN0JnmguOCJ1+D0z8FzFDcKmzS0iX7m0Ad6RA5fFSEhs7Gc9lSzursNXoQ/nUeNlzE6jwkjdOW3cXTJY4B4nW5nY/R5p135BUOJjCMVArUCU6mT7xBjA5XqH9syQNF1I7i64oZ6I1ETZKt84lb6jSDqT4I5+ut+WOjqMnMArr1kDun/p9gLbAq0SpOv7Xpkv15+Y0SYkcZpmzm4wDcztr9/OABlYdrdKhUP8gwwOlYRpS/FUZi//cluznvkHx/5t18fd2iH+LeMHrfWAetsfUQ9RC5sAN/cFt50e/8KypPRqAjEKSzli+15FElXjBVMO5wwwqBu4VGghW9JlvoYS4y0+V/ku7o94b1ickpyB+aRqBevCHZ0CZ6+dc8UC0F0fvy3v+woFydrLljFK+ReY8oOZMX8H/g8pvc8kQhk5TCwX8n5BxeYFpsmuXxU36rOG8wP5qOno/D4Ls4Laf2Q5s35LZEretQ9BxWLJwro2qvP0gH91Kh2FiKkqvJXFkdy60ITqG6dGlRIA16wUuw4hYLSOfF4sDkeNL8+xp8CJNUCgd+fycOUrnk7qU9zfaCQAgyLA2vQmC4Zy6xpXLo1JD21HHvCAkQ== pallaviraj5992@gmail.com
+
+copy the ssh key and past on git hub account
+8. git push origin master   #final
+
+
+1. gitignore  add that folder or file you don't want to upload
+git config --global user.name Pallavi
+git config --global user.email "pallaviraj5992@gmail.com"
+2. git init command run it create .git folder that means project git respostary initilized
+3. git add .  all files and folder comes to statging area
+4. git commit -m "First commit" 
+5. git status  # Just see that wroking tree clean or not
+6. ssh-keygen -t rsa -b 4096 -C "pallaviraj5992@gmail.com"   # it will give key
+7. tail <path to id_rsa.pub> # add this key to your github account
+8. git remote add origin [ssh url.git]
+9.git push origin master
+
+Below are the commands we are going to use to upload files to GitHub with Git Bash
+
+ls
+cd
+git init
+git remote add origin [gitLink]
+git remote -v
+git add .
+git commit -m "First commit"
+git push origin master
+
+
+Enter passphrase (empty for non passphrase)
+ /c/Users/dell/.ssh/id_rsa.pub
+
+ls- List all the files in the current directory
+
+If your source code is in the different directory, you need to change the directory on git bash with command cd followed by directory or path.
+
+cd - To change the directory
+
+git init- This command initializes the git in the given path. You can see the .git hidden files after this command gets executed.
+
+git remote add origin [gitLink]- gitLink denote the place where your code is stored in the remote repository
+
+git add .- Add all the files in the local directory to the remote repository
+
+git commit -m "First commit"- It establishes a connection with local repository
+
+git push origin master- It establishes a connection with a remote repository and upload your source code or files to GitHub
+
+Note: If you get fatal: remote origin already exists which means the connection is already established.
+
+Above method helps to push files or project folder to GitHub using the command line.
