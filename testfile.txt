@@ -28,20 +28,10 @@ git push origin master
 
 
 1. gitignore  add that folder or file you don't want to upload
+
+
 git config --global user.name Pallavi
 
-
-
-After downloading Laravel project from git follow these steps
-
-composer update --no-scripts
-
-copy .env.example .env
-
-key generate for .env file
-php artisan key:generate
-
-add .htacess file from public folder and index file
 git config --global user.email "pallaviraj5992@gmail.com"
 2. git init command run it create .git folder that means project git respostary initilized
 3. git add .  all files and folder comes to statging area
