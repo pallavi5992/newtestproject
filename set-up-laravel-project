@@ -1,0 +1,10 @@
+After downloading Laravel project from git follow these steps
+
+composer update --no-scripts
+
+copy .env.example .env
+
+key generate for .env file
+php artisan key:generate
+
+add .htacess file from public folder and index file
